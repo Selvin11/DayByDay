@@ -1,0 +1,151 @@
+.clearfix:after { 
+    content:"\200B"; 
+    display:block; 
+    height:0; 
+    clear:both; 
+} 
+.clearfix {*zoom:1;}/*IE/7/6*/
+body{
+  position:relative;
+  width:100%;
+  height:100%;
+  background-color:#F0F0F0;
+}
+/**
+ * header region
+ */
+header{
+  position:relative;
+  width:100%;
+  line-height:2.5em;
+  color:#fff;
+  background-color: rgba(0, 150, 136, 0.8);
+  box-shadow: 0 1px 1px rgba(0,0,0,.5);
+  z-index:2;
+}
+
+.logo{
+  float:left;
+  padding:0 1.5em;
+}
+
+.logo i,
+.logo h1,
+.funny i{
+  display:inline-block;
+  font-size:1.3em;
+}
+.logo i:active{
+  background-color:rgba(0, 150, 136, 0.37);
+}
+.logo h1{
+  margin-left:1em;
+}
+/**
+ * just for fun
+ */
+.funny{
+  float:right;
+  margin:0 1.5em;
+ 
+}
+.funny .fa-hourglass::before {
+  animation:glass 6s infinite;
+}
+
+@keyframes glass{
+  0% {content:"\f251";}
+  33% {content:"\f252";}
+  66% {content:"\f253";}
+  100% {content:"\f251";}
+}
+
+/**
+ * modal box show 
+ */
+#modalbox{
+  position:absolute;
+  top:0;
+  left:-14em;
+  width:14em;
+  z-index:1;
+  background-color:#fefefe;
+  box-shadow:1px 0 1px rgba(0, 0, 0, .2);
+  transition:left .4s linear;
+}
+#modalbox ul{
+  margin-top:20%;
+}
+#modalbox li{
+  padding:1.5em 2em;
+}
+#modalbox li a{
+  padding-left:1em;
+  text-decoration:none;
+  color:#444;
+}
+/**
+ * middle content area
+ */
+.middle{
+  width:50%;
+  margin:0 auto;
+  margin-top:5em;
+}
+@media screen and (max-width: 600px) {
+  .middle {
+    width:70%;
+  }
+}
+
+.content{
+  position:relative;
+  background-color:#fefefe;
+}
+time{
+  display:block;
+  margin-bottom:1em;
+  text-align:center;
+}
+.checkbox{
+  position:relative;
+  display:inline-block;
+  padding:0.6em;
+  margin-left:.5em;
+  margin-top:.6em;
+  background-color:#fefefe;
+  border:1px solid #666;
+}
+.content input{
+  position:relative;
+  top:-0.3em;
+  left:.5em;
+  width:80%;
+  height:2em;
+  border:none;
+  outline:none;
+  font-size:1em;
+}
+.done{
+  border:1px solid rgba(0, 150, 136, 0.8);
+  background-color:rgba(0, 150, 136, 0.8);
+}
+.done:before{
+  content: "\f00c";
+  position: absolute;
+  top: 0.1em;
+  left: 0.15em;
+  font-family: 'FontAwesome';
+  font-size: 1em;
+  color:#fefefe;
+}
+/**
+ * add btn area
+ */
+.add{
+  display:inline-block;
+  position:absolute;
+  right:5%;
+  bottom:5%;
+}
+
