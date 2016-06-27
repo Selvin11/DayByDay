@@ -147,5 +147,30 @@ time{
   position:absolute;
   right:5%;
   bottom:5%;
+  transition:all .5s;
 }
 
+/**
+ * @edit-area  area
+ */
+.edit-area{
+ position:absolute;
+ top:50%;
+ right:5%;
+ width:30%;
+}
+.edit-area textarea{
+  width:100%;
+}
+.date-info input{
+  margin-left:2em;
+}
+.date-info a{
+  text-decoration:none;
+  margin-left:2em;
+}
+@media screen and (max-width: 1100px){
+  .edit-area{
+    width:340px;
+  }
+}
