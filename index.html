@@ -20,33 +20,29 @@
 	</header>
 	<div class="modalbox" id="modalbox">
 		<ul>
-			<li><i class="fa fa-calendar-o"></i><a href="#">全部事项</a></li>
-			<li><i class="fa fa-calendar-check-o"></i><a href="#">完成事项</a></li>
-			<li><i class="fa fa-calendar-times-o"></i><a href="#">待做事项</a></li>
-			<li><i class="fa fa-child"></i><a href="#">关于</a></li>
+			<li id="all"><i class="fa fa-calendar-o"></i><a href="#">全部事项</a></li>
+			<li id="complete"><i class="fa fa-calendar-check-o"></i><a href="#">完成事项</a></li>
+			<li id="uncomplete"><i class="fa fa-calendar-times-o"></i><a href="#">待做事项</a></li>
+			<li id="about"><i class="fa fa-child"></i><a href="#">关于</a></li>
 		</ul>
 	</div>
 	<div class="middle" id="middle">
-		<ul>
-			<li>
-				<time>2016.06</time>
-				<div class="content">
-					<span class="checkbox"></span>
-					<input type="text" class="write">
-				</div>
-			</li>
-		</ul>
 	</div>
 	<div class="add" id="add">
 		<i class="fa fa-plus fa-2x fa-fw"></i>
 	</div>
 	<div class="edit-area" style="display: none;">
-		<textarea name="" id="" cols="30" rows="10"></textarea>
+		<textarea name="" id="text" cols="30" rows="10"></textarea>
 		<div class="date-info">
 			<span id="weektime"></span>
 			<input type="date" id="date">
-			<a href="" id="comfirm">添加</a>
+			<a href="#" id="comfirm">添加</a>
 		</div>
+	</div>
+	<div id="about-content" style="display: none;">
+		<p>
+			This is a simple todo module. It can do normal thing as todo what to do. But it can't save data . Because it hasn't connect server . It's used by HTML5 、CSS3 and JavaScript. 
+		</p>
 	</div>
 	<script src="js/gsw.js"></script>
 </body>
